@@ -1,0 +1,16 @@
+CREATE TABLE dnd_store (id INTEGER, item TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO dnd_store VALUES (1, "resin dice set", 50, 20);
+INSERT INTO dnd_store VALUES (2, "figurine", 150, 3);
+INSERT INTO dnd_store VALUES (3, "game mat", 10, 40);
+INSERT INTO dnd_store VALUES (4, "spell cards", 30, 20);
+INSERT INTO dnd_store VALUES (5, "books", 25, 60);
+INSERT INTO dnd_store VALUES (6, "paint", 200, 1);
+INSERT INTO dnd_store VALUES (7, "soda", 50, 4);
+INSERT INTO dnd_store VALUES (8, "metal dice set", 10, 60);
+INSERT INTO dnd_store VALUES (9, "props", 5, 100);
+INSERT INTO dnd_store VALUES (10, "table", 20, 50);
+
+SELECT * FROM dnd_store ORDER BY price;
+
+SELECT SUM(price) FROM dnd_store;
